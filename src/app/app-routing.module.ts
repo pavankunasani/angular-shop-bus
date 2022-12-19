@@ -4,10 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { CustomerComponent } from './customer/customer.component';
 import { AppComponent } from './app.component';
 
-const routes: Routes = [
-  { path: '', component: AppComponent },
-  { path: 'customers', component: CustomerComponent },
-];
+const routes: Routes = [{ path: 'customers', component: CustomerComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), CommonModule],
